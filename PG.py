@@ -16,5 +16,5 @@ class Password_generator:
         self.password += [symbols[randint(0, len(symbols) - 1)] for x in range(0, randint(2, 4))]
         self.password += [numbers[randint(0, len(numbers) - 1)] for x in range(0, randint(2, 4))]
         shuffle(self.password)
-        self.user_password = "".join([i for i in self.password])
+        self.user_password = "".join(self.password)
 
